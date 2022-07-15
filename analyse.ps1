@@ -27,4 +27,5 @@ foreach ($repo in Get-ChildItem ".") {
   }
   $name = $repo.Name
   echo "$name,$size,$files"
+  echo "$name,$size,$files" >> log.txt
 }
